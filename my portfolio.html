@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portpolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+      
+    <title>Document</title>
+    <style>
+/* Existing styles */
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(0, 0, 0, 0.954);
+    color: beige;
+}
+header {
+    background-color: rgba(0,0,0,0);
+    padding: 5px;
+    border-radius: 15px;
+    position: fixed;
+    width: 100%;
+}
+.sectionA {
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar_icons:hover {
+    color: yellow;
+}
+.navbar_icons {
+    margin-right: 80px;
+}
+.nav_logo p {
+    font-size: 60px;
+    font-family: serif;
+    color: rgb(255, 225, 0);
+}
+.main_sectionA {
+    padding-left: 100px;
+    padding-right: 150px;
+    display: flex;
+    padding-top: 180px;
+    height: 500px;
+    justify-content: space-evenly;
+    position: relative;
+}
+.main_sectionA_img {
+    position: relative;
+    margin-right: 15px;
+}
+#main_sectionA_hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#first_img {
+    position: absolute;
+    left: 2px;
+    margin-top: 50px;
+}
+.main_sectionA_content {
+    font-size: 50px;
+    font-family: serif;
+    font-weight: 600;
+    margin-right: 60px;
+}
+#element {
+    color: rgb(226, 223, 43);
+    font-size: 50px;
+}
+#contentA {
+    font-size: 40px;
+    margin-top: 50px;
+}
+#contentB {
+    font-size: 75px;
+    color: rgb(255, 166, 0);
+    margin-top: 2%;
+}
+#outer_mainsectionA_hr {
+    margin-left: 100px;
+    margin-bottom: 5px;
+    margin-right: 100px;
+}
+.main_sectionB {
+    margin: 190px;
+    background-color: white;
+    padding-right: 100px;
+}
+.block_container {
+    display: block;
+    margin-left: 35px;
+    right: -100px;
+}
+.about_container {
+    padding: 80px;
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+#about_img {
+    padding: 10px;
+    margin-top: 35px;
+    padding-top: 38px;
+    border-radius: 10000px;
+}
+.about_content {
+    margin-top: 100px;
+    font-size: x-large;
+    margin-left: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(19, 45, 113);
+}
+.download {
+    margin-top: 90px;
+    padding: 16px;
+    font-size: 17px;
+    background-color: rgb(11, 11, 52);
+    color: white;
+}
+#About_first {
+    margin-top: 9px;
+    margin-bottom: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#about_me {
+    text-align: center;
+    font-size: 45px;
+    padding-top: 50px;
+    font-family: serif;
+    color: rgb(59, 77, 175);
+}
+.project_section {
+    display: block;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 90px;
+    background-color: rgb(1, 1, 23);
+}
+.project_coloum01 {
+    display: flex;
+    margin: 80px;
+}
+.project_coloum02 {
+    display: flex;
+    margin: 80px;
+}
+.project_fill {
+    border-style: outset;
+    border-radius: 1px;
+    padding: 50px;
+    text-align: left;
+    background-color: rgb(12, 12, 26);
+    margin-right: 15px;
+    transition: 0.4s;
+    box-shadow: 0px 0px 15px rgb(36, 167, 255);
+}
+.project_fill:hover {
+    transform: translateY(-0.35rem);
+}
+#project_img {
+    border-radius: 00px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+#my_project {
+    text-align: center;
+    margin-right: 0px;
+    background-color: rgb(1, 1, 23);
+    font-size: 50px;
+    padding-top: 50px;
+    font-family: serif;
+}
+.main_sectionA button {
+    padding: 15px;
+    margin-top: 50px;
+    color: blue;
+    font-weight: 900;
+    font-family: serif;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0px 0px 15px rgb(36, 167, 255);
+}
+.contact_class form label {
+    display: block;
+    justify-content: center;
+}
+.contact-class {
+    background-color: rgb(1, 1, 23);
+    padding-bottom: 30px;
+}
+.contact_class {
+    font-size: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 250px;
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding-bottom: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    color: rgb(2, 2, 43);
+}
+#input {
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgba(130, 232, 213, 0.613);
+}
+input {
+    color: rgb(0, 0, 0);
+}
+
+/* Media queries for responsiveness */
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    #second_img{
+        height: 280px;
+        width: 220px;
+    }
+.nav_logo{
+    font-size: 5px;
+    margin-right: 25px;
+}
+    header {
+        padding: 10px;
+    }
+
+    .navbar_icons {
+        margin-right: 20px;
+    }
+
+    .main_sectionA {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .main_sectionA_img {
+        width: 100%;
+        height: 350px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .main_sectionA_content {
+        font-size: 30px;
+        margin-right: 0;
+    }
+
+    #element {
+        font-size: 20px;
+    }
+
+    #contentA {
+        font-size: 16px;
+    }
+
+    #contentB {
+        font-size: 30px;
+    }
+
+    .main_sectionA button {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .about_container {
+        flex-direction: column;
+        padding: 10px;
+     
+    }
+    .main_sectionB{
+        text-align: center;
+        width: 350px;
+        padding-left: 30px;
+        margin-left: 45px;   
+     }
+
+    #about_img {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+        margin-right: 25px;
+    }
+
+    .about_content {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+   
+
+    .project_coloum01, .project_coloum02 {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .project_fill {
+        margin-bottom: 20px;
+        width: 320px;
+        margin-left: -25px;
+       
+    }
+
+    #project_img {
+        width: 200px;
+        height: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+        
+    }
+
+    .contact_class {
+        margin: 20px;
+        margin-top: 0;
+        padding: 20px;
+        font-size: 20px;
+    }
+    .contact-class{
+        padding-bottom: 20px;
+    }
+
+    #input {
+        width: 100%;
+        height: 30px;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 600px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+    #second_img{
+        margin-top: 10px;
+    }
+    .sectionA{
+        font-size: 19px;
+        text-align: center;
+    }
+    .nav_logo{
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .main_sectionA {
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 50px;
+        text-align: center;
+    }
+
+    .main_sectionA_img {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .main_sectionA_content {
+        font-size: 30px;
+    }
+
+    #element {
+        font-size: 30px;
+    }
+
+    #contentA {
+        font-size: 30px;
+    }
+
+    #contentB {
+        font-size: 40px;
+    }
+
+    .main_sectionA button {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .about_container {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+       
+    }
+
+    #about_img {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .about_content {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .main_sectionB{
+        margin-top: 450px;
+    }
+    .project_fill{
+        margin-top: 15px;
+    }
+    .contact_class{
+        width: 450px;
+        text-align: center;
+        margin-left: 160px;
+        padding-bottom: 80px;
+    }
+    .contact-class{
+        padding-bottom: 20px;
+    }
+   
+
+    .project_coloum01, .project_coloum02 {
+        flex-direction: column;
+        margin: 40px 0;}}
+        
+        .navbar_icons:hover{
+            color: blueviolet;
+        }
+   
+
+    
+</style>
+    
+</head>
+<body>
+    <header>
+        <section class="sectionA">
+            <div class="nav_logo"><p>YR</p></div>
+            <div class="navbar">
+                <div class="navbar_icons">Home</div>
+                <div class="navbar_icons">About</div>
+                <div class="navbar_icons">project</div>
+                <div class="navbar_icons">Contact Me</div>
+            </div>
+        </section>
+        
+    </header>
+    <main>
+        <section class="main_sectionA">
+            <div class="main_sectionA_content">
+                <div id="contentA">Hi,</div>
+                <div id="contentB">I am Yash Rai</div>
+                <span id="element"></span>
+                <br>
+                <button type="button">Recent Work</button>
+               
+            </div>
+            <div class="main_sectionA_img">
+                <img src="https://i.ibb.co/W2QfJPL/pngegg-1.png" alt="" id="second_img" height="500px" width="350px">
+                
+            </div>
+           
+            
+        </section>
+       
+        <section class="main_sectionB">
+            <h1 id="about_me">ABOUT  Me !</h1>
+            <div class="about_container">
+              
+                <div class="about_img"><img src="https://i.ibb.co/W2QfJPL/pngegg-1.png" id="about_img" alt="" height="400px" ></div>
+                <div class="about_content"><p><h1>Hi,</h1>I am a frontend web designer with friendly skills in machine learning. Basically, I make various designs for startup companies as well as for big companies. I usually deal with designing and maintaining of website's User Interface.</p>
+                    <button type="button" class="download">Download CV</button>
+                </div>
+            </div>
+           
+            
+        </section>
+        <h1 id="my_project">MY PROJECT's</h1>
+        <section class="project_section">
+            <div class="project_coloum01">
+                <div class="project_fill">
+               
+                    <h2>Eccomerce Website</h2>
+                    <br>
+                    <p>I designed a e-commerce website frontend user interface.I am still working it framwork and angular to enhace my website interface and also going with backend database management system.</p><br>
+                    <img src="https://i.ibb.co/2yXgPwk/218-2187596-website-design-development-services-website-design-services-hd.png"  id="project_img"
+                    alt="" height="200px" width="250px">
+                </div>
+                <div class="project_fill">
+                    <h2>SONAR Range System</h2>
+                    <br>
+                <p>I designed a SONAR range navigation system using machine learning algorithum by python , which use the current data and predict the upcomimg rock and mine presence using new frequence reading.</p><br>
+                <img src="https://i.ibb.co/jLLwfKw/54-How-does-Home-and-office-Automation-works-1.jpg" id="project_img" alt="" height="200px" width="250px"></div>
+            </div>
+            <div class="project_coloum02">
+                <div class="project_fill">
+                    <h2>Heart Attack Prediction Model</h2>
+                    <br>
+                    <p>I designed a heart attack prediction mechanism using machine learning algorithum by python , which take the current reports and analyse it after that on the upcoming data it will predict weather the paitence have heart desiese or not.</p><br>
+                    <img src="https://i.ibb.co/R92jtcD/artificial-heart-770x510-ss-no-exp.jpg" alt="" id="project_img" height="200px" width="250px"></div>
+                    
+                    <div class="project_fill">
+                        <h2>Spam Mail Detection Model</h2>
+                    <br>
+                    <p>I designed a spamprediction mechanism using machine learning algorithum by python , which take the current mails and analyse it after that on the upcoming data it will predict weather the upcoming mail is fruad or not.</p><br><img src="https://i.ibb.co/WKH75Gm/spam-mail.webp" id="project_img" alt="" height="200px" width="250px"></div>
+            </div>
+            
+           
+            
+        </section>
+        <section class="contact-class">
+            <div class="contact_class">
+                <div>
+                    <h2>Contact Me</h2>
+                </div>
+                <br>
+                <form>
+                    <label for="uname"><b> First Name</b></label>
+                    <input type="text" placeholder="Enter first name" name="uname" id="input" >
+                    <label for="uname"><b> Last Name</b></label>
+                    <input type="text" placeholder="Enter last name" name="uname" id="input" >
+                    <label for="uname"><b> Email id</b></label>
+                    <input type="text" placeholder="Enter your email id" name="uname" id="input">
+                  </form>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#element', {
+        strings: [' web developer', 'Data Visualizer','Data Minner', 'Graphic Designer'],
+        typeSpeed: 50,
+      });
+    </script>
+    
+
+</body>
+
+</html>
